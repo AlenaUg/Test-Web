@@ -1,0 +1,107 @@
+<html><head><title>Тест по правоведению</title>
+    <link rel="stylesheat" href="style_gl.css" type="text/css">
+    <style type="text/css">
+body	{
+        background-image: url(fon3.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: #d8cae1;
+       }
+.text1 {
+    width: 900px; /* задаём ширину элемента */
+    border-width: 5px; /* задаём  ширину границы */
+    /* border-style: solid; задаём сплошную границу */
+    /* stext-align: center; задаём выравнивание текста по центру */
+    margin-left: 100px;
+    margin-right: px; /* устанавливаем величину внешнего отступа от правого края элемента */
+    margin-bottom: 80px; /* устанавливаем величину внешнего  отступа от нижнего края элемента */
+
+
+    font-size: 45pt;
+    font-weight: 800;
+    font-family:'Toch';
+    font-style: oblique;
+    letter-spacing: 12px;
+    filter: Glow(Strength='6', color='#8000000');
+
+    text-shadow:
+		-1px -1px #f3abab,
+		-2px -2px #f3abab,
+		-1px 1px #f3abab,
+		-2px 2px #f3abab,
+		1px 1px #f3abab,
+		2px 2px #f3abab,
+		1px -1px #f3abab,
+		2px -2px #f3abab,
+		-3px -3px 2px #f3abab,
+		-3px 3px 2px #f3abab,
+		3px 3px 2px #f3abab,
+		3px -3px 2px #f3abab;
+        color: #7c2525;
+	transition: all 1s;
+    }
+
+.custom-btn {
+  width: 10000px;
+  height: 80px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: 1300px;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-5 {
+  margin-left: 400px;
+  width: 200px;
+  height: 50px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(238, 97, 81);
+background: linear-gradient(0deg, rgb(238, 97, 81) 0%, rgb(238, 97, 81) 100%);
+}
+.btn-5:hover {
+  color: #ddff00;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+    </style></head>
+<body>
+    <div class="text1"><br><br><br>Тест по правоведению</div>
+    <button class="custom-btn btn-5" onclick="location.href='index.html'"><span>Пройти тест</span></button>
+</body></html>
